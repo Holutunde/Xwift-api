@@ -1,7 +1,4 @@
-
-# node.js
-node_modules/
-
-
-# dotenv environment variables file
+node_modules
+tmp
+package-lock.json
 .env

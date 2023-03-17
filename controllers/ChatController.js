@@ -32,7 +32,6 @@ exports.userChats = async (req, res) => {
 };
 
 exports.findChat = async (req, res) => {
-  console.log(req.params.receiverId);
   try {
     const chat = await ChatModel.findOne({
       members: { $all: [req.params.senderId, req.params.receiverId] },

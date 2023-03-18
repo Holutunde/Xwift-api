@@ -1,6 +1,9 @@
 {
   "name": "xwiftchat_api",
   "version": "1.0.0",
+    "engines": {
+    "node": ">=14.20.1"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {

@@ -11,6 +11,17 @@ const MessageSchema = new mongoose.Schema(
     text: {
       type: String,
     },
+    record: {
+      type: Object,
+      secure_url: {
+        type: URL,
+        required: true,
+      },
+      public_id: {
+        type: String,
+        required: true,
+      },
+    },
   },
   { timestamps: true }
 );

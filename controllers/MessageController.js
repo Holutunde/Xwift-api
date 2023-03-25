@@ -46,3 +46,11 @@ exports.getMessages = async (req, res) => {
     res.status(500).json(error);
   }
 };
+exports.getAllMessages = async (req, res) => {
+  try {
+    const result = await MessageModel.find({});
+    res.status(200).json(result);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};

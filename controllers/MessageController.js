@@ -9,12 +9,13 @@ cloudinary.config({
 });
 
 exports.addMessage = async (req, res) => {
-  const { chatId, senderId, text } = req.body;
+  const { chatId, senderId, text, receiverId } = req.body;
   try {
     const message = new MessageModel({
       senderId,
       text,
       chatId,
+      receiverId,
     });
 
     const record = req.files?.audio;
